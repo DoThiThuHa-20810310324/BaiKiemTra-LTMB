@@ -29,19 +29,31 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#9DD6EB'
+    backgroundColor:'#5EA33A'
   },
   slide2: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#97CAE5'
+    backgroundColor: '#5EA33A'
   },
   slide3: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#92BBD9'
+    backgroundColor: '#5EA33A'
+  },
+  slide4: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#5EA33A'
+  },
+  slide5: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#5EA33A'
   },
   text: {
     color: '#fff',
@@ -49,19 +61,24 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   }
 })
-
 export default class SwiperComponent extends Component {
   render() {
     return (
       <Swiper style={styles.wrapper} showsButtons={true}>
         <View style={styles.slide1}>
-          <Text style={styles.text}>Hello Swiper</Text>
+          <Text style={styles.text}>Browse  Food</Text>
         </View>
         <View style={styles.slide2}>
-          <Text style={styles.text}>Beautiful</Text>
+          <Text style={styles.text}>Order Food</Text>
         </View>
         <View style={styles.slide3}>
-          <Text style={styles.text}>And simple</Text>
+          <Text style={styles.text}>Make Reservations</Text>
+        </View>
+        <View style={styles.slide4}>
+          <Text style={styles.text}>Quick Search</Text>
+        </View>
+        <View style={styles.slide5}>
+          <Text style={styles.text}>Apple Pay</Text>
         </View>
       </Swiper>
     )
